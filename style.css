@@ -1,0 +1,208 @@
+body{
+   
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-size: cover;
+   
+}
+
+.video-background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   opacity: 1;
+   height: 100%;
+   overflow: hidden;
+   z-index: -1; 
+ }
+ 
+ .video-background video {
+   min-width: 100%;
+   min-height: 100%;
+ }
+ 
+ .content {
+   position: relative;
+   z-index: 1; 
+ }
+ 
+#basic_info {
+   margin-top: 9vh;
+   color: #f3f3f3;
+   text-decoration:wavy;
+   position: relative;
+   font-size: 3vh;
+   font-weight: 400;
+   margin-left: 50vw;
+   /* text-align: center; */
+   display: inline-block;
+}
+#basic_info .main{
+  color: white;
+  white-space: nowrap;
+ 
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.6s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
+#basic_info .main:hover{
+  transition: 0.3s;
+  transform: scale(1.1)translate(-50%, -50%);
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}
+
+#page1 button{
+   
+   margin-top: 100vh;
+   
+   /* position: absolute; */
+   /* background-color:#f4511e */
+   margin-left: 35vw;
+  }
+ #page2 h3{
+   margin-left: 21vh;
+   display: inline-block;
+   color: white;
+   font-size: 4vh;
+   font-weight: 900;
+   margin-bottom: 8vh;
+   /* background-color: red; */
+ }
+
+
+ #timer{
+   margin-left: 80vw;
+   margin-top: 0vh;
+   display: inline-block;
+   
+   padding: 3px;
+   font-size: 50;
+   font-weight: 500;
+   border-radius: 15%;
+   color: #FFFFFF;
+   /* background-color: black; */
+ }
+
+  .question_container{
+   position: absolute;
+   margin-top: 5vh;
+   margin-left: 36vw;
+   /* background-color: aqua; */
+  }
+  .question_container .question{
+    color:#f3f3f3;
+   padding: 14px;
+   font-size: 2.6vh;
+   font-weight: 600;
+  }
+  .question_container .question input[type="radio"]{
+      margin-left: 15px;
+      padding: 40px;
+      background-color: red;
+  }
+  .question_container #timer{
+    margin-left: 50%;
+    display: inline;
+    background-color: yellow;
+  }
+  .question_container .question input[type='radio'] {
+   margin-right: 5px; /* Add some space between the radio button and the label */
+ }
+ 
+ .question_container .question input[type='radio']:checked {
+   background-color: #007bff; /* Change background color when checked */
+   color: white; /* Change text color when checked */
+   border-color: #007bff; /* Change border color when checked */
+ }
+
+ #page1 button{
+   margin-left: 45vw;
+   margin-top: 10vh;
+ }
+  .button {
+   position: relative;
+   margin-top: 20vh;
+   display: inline-block;
+   border-radius: 4px;
+   background-color: #f4511e;
+   border: none;
+   border-radius: 19px;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 28px;
+   padding: 20px;
+   width: 200px;
+   
+   cursor: pointer;
+
+   margin-top: 9vh;
+   margin-bottom: 20px;
+   margin-left: 9vw;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+ }
+ 
+ .button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+
+ }
+ 
+ .button span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 1s;
+   
+   
+ }
+
+ .button:hover span {
+   padding-right: 25px; 
+ }
+ 
+ .button:hover span:after {
+   opacity: 1;
+   right: 0;
+
+   
+ }
+
+ /* PAGE-3 */
+ #result-container  {
+   text-align: center;
+   margin-top: 10vh;
+   margin-left: 75vh;
+   display: inline-block;
+ }
+ #result-container h3,p, #userAnswers{
+   color: #f3f3f3;
+   font-size: 2.6vh;
+   font-weight: 900;
+
+   
+   transition: transform 0.5s ease, color 0.5s ease;
+ }
+ #result-container h3:hover {
+  transform: translateY(-5px); /* Adjust this value to control how much the text raises out */
+  color: grey; /* Change to a cooler color on hover */
+}
+
+#result-container p:hover {
+  transform: translateY(-5px); 
+}
+#result-container #userAnswers:hover {
+  transform: translateY(-5px);
+}    

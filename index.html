@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quiz</title>
+   <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="video-background">
+      <video autoplay muted loop>
+        <source src="resources/pexels-louai-munajim-5818973 (2160p).mp4" type="video/mp4">
+      </video>
+    </div>
+   <div id = "basic_info">
+              <!-- <h1 class="main"> Code Rush </h1> -->
+              <h1 class="main"> Code Rush</h1>
+   </div>
+   <div id = "page1">
+      <button class="button" onclick="showsecndPage()"><span>Start</span></button>
+   </div>
+
+<div id="page2" style="display: none;">
+  <div class="question_container">
+   <h3>Questions</h3>
+
+   <div class="question">
+      <p>Question 1: What is the capital of France?</p>
+      <input type="radio" name="question1" value="Paris"> Paris<br>
+      <input type="radio" name="question1" value="London"> London<br>
+      <input type="radio" name="question1" value="Berlin"> Berlin<br>
+   </div>
+   <div class="question">
+      <p>Question 2: What is the largest planet in our solar system?</p>
+      <input type="radio" name="question2" value="Jupiter"> Jupiter<br>
+      <input type="radio" name="question2" value="Mars"> Mars<br>
+      <input type="radio" name="question2" value="Earth"> Earth<br>
+   </div>
+   <div class="question">
+      <p>Question 3: What is the largest planet in our solar system?</p>
+      <input type="radio" name="question3" value="Jupiter"> Jupiter<br>
+      <input type="radio" name="question3" value="Mars"> Mars<br>
+      <input type="radio" name="question3" value="Earth"> Earth<br>
+   </div>
+   <div class="question">
+      <p>Question 4: What is the largest planet in our solar system?</p>
+      <input type="radio" name="question4" value="Jupiter"> Jupiter<br>
+      <input type="radio" name="question4" value="Mars"> Mars<br>
+      <input type="radio" name="question4" value="Earth"> Earth<br>
+   </div>
+   <div class="question">
+      <p>Question 5: What is the largest planet in our solar system?</p>
+      <input type="radio" name="question5" value="Jupiter"> Jupiter<br>
+      <input type="radio" name="question5" value="Mars"> Mars<br>
+      <input type="radio" name="question5" value="Earth"> Earth<br>
+   </div>
+
+
+   <button class="button" onclick="submitAnswers()"><Span>Submit</Span></button>
+  </div>
+  <div id="timer">5:00</div>
+
+</div>
+ <div id="page3" style="display: none;">
+   <div id="result-container">
+      <h3 class="same_div">Congrats! You Did it</h3>
+      <p class="same_div">Time Taken: <Span id="timeTaken"></Span></p>
+      <div class="same_div" id="userAnswers"></div>
+   </div>
+ </div>
+    
+<script src="script/script.js"></script>
+</body>
+</html>
