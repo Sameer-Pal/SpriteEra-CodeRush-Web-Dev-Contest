@@ -21,4 +21,4 @@ This page should display a message indicating that the user has successfully com
 
 ## Demo
 
-Click [here](https://prabhat1225.github.io/Website-Development-Contest-SpriteEra-/) to view the project website directly.
+
